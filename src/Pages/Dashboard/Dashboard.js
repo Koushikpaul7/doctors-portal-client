@@ -22,7 +22,11 @@ const Dashboard = () => {
       {/* <!-- Sidebar content here --> */}
       <li><Link to='/dashboard'>My appointments</Link></li>
       <li><Link to='/dashboard/review'>My reviews</Link></li>
-    {admin &&  <li><Link to='/dashboard/users'>All users</Link></li>}
+    { admin && <>
+      <li><Link to='/dashboard/users'>All users</Link></li>
+      <li><Link to='/dashboard/addDoctor'>Add a Doctor</Link></li>
+      <li><Link to='/dashboard/manageDoctor'>Manage Doctors</Link></li>
+    </>}
     </ul>
   
   </div>
